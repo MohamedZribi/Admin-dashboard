@@ -1,2 +1,73 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
+.main-container {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+
+}
+
+.header {
+    background-color: blue;
+    grid-column: 2/ 5;
+    grid-row: 1/ 2;
+
+}
+
+.sidebar {
+    background-color: #60a5fa;
+    grid-column: 1/2;
+    grid-row: 1/ 5;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+
+.dashboard, .home, .profile, .messages,
+.history, .tasks, .communities, 
+.settings, .support, .privacy
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    gap: 10px;
+
+    color: white;
+}
+
+
+
+.my-projects {
+    background-color: green;
+    grid-column: 2/ 4;
+    grid-row: 2/ 5;
+}
+
+
+.announcements-and-trending {
+    background-color: pink;
+    grid-column: 4/ 5;
+    grid-row: 2/5;
+
+}
+
+img{
+    height: 20px;
+    width: 20px;
+
+    filter: invert(92%) sepia(8%) saturate(0%) hue-rotate(79deg) brightness(106%) contrast(107%);
+
+}
 
